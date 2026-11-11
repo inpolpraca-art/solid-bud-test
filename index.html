@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="SolidBud — kompleksowe prace remontowo-wykończeniowe w Warszawie. Układanie płytek, malowanie, gładzie i remonty mieszkań.">
+  <meta property="og:title" content="SolidBud — remonty i wykończenia w Warszawie">
+  <meta property="og:description" content="Staranność w każdym detalu. Kompleksowe prace remontowo-wykończeniowe w Warszawie i okolicach.">
+  <meta property="og:type" content="website">
+  <title>SolidBud — remonty i wykończenia w Warszawie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink: '#202522', muted: '#69716b', paper: '#f6f4ef', olive: '#66745d', line: '#e5e2d9', sand: '#e9e5da' }, fontFamily: { sans: ['DM Sans','sans-serif'], display: ['Manrope','sans-serif'] } } } };
+  </script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body class="bg-paper text-ink antialiased">
+  <div class="topline">
+    <div class="container topbar">
+      <span data-i18n="topline">Warszawa i okolice · Bezpłatna wycena</span>
+      <div class="topbar-right"><span class="topbar-dot"></span><span data-i18n="toplineRight">Dostępne terminy na nowe realizacje</span></div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="SolidBud — strona główna">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-name">solid<span>bud</span><small>REMONTY · WYKOŃCZENIA</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#uslugi" data-i18n="navServices">Usługi</a>
+        <a href="#realizacje" data-i18n="navWork">Realizacje</a>
+        <a href="#o-nas" data-i18n="navAbout">O nas</a>
+        <a href="#opinie" data-i18n="navReviews">Opinie</a>
+        <a href="#kontakt" data-i18n="navContact">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="language-switch" aria-label="Wybierz język">
+          <button class="lang-btn active" data-lang="pl">PL</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="uk">UA</button>
+        </div>
+        <a class="button button-dark nav-cta" href="#kontakt" data-i18n="navCta">Bezpłatna wycena <span>↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">SOLIDNE REMONTY W WARSZAWIE</span></div>
+          <h1 data-i18n-html="heroTitle">Dobrze wykonana<br><em>praca</em> broni się sama.</h1>
+          <p class="hero-lead" data-i18n="heroLead">Od precyzyjnego układania płytek po kompleksowe wykończenia wnętrz. Dbamy o jakość, porządek i detale — tak, jak sami chcielibyśmy mieć zrobione.</p>
+          <div class="hero-buttons">
+            <a class="button button-olive" href="#kontakt" data-i18n="heroButton">Porozmawiajmy o remoncie <span>↗</span></a>
+            <a class="text-link" href="#realizacje"><span data-i18n="heroLink">Zobacz przykładowe realizacje</span><b>↓</b></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-avatars"><span>✓</span><span>✓</span><span>✓</span></div>
+            <div><strong data-i18n="proofTitle">Rzetelnie od pierwszej rozmowy</strong><small data-i18n="proofText">Jasne ustalenia · staranne wykonanie</small></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"></div>
+          <div class="photo-note"><span class="note-icon">✳</span><div><strong data-i18n="photoNoteTitle">Liczy się każdy detal</strong><small data-i18n="photoNoteText">Estetyka, trwałość, dokładność</small></div></div>
+          <div class="hero-index">01 <span>/</span> 03</div>
+          <div class="vertical-label" data-i18n="verticalLabel">WARSZAWA · MAZOWIECKIE</div>
+        </div>
+      </div>
+      <div class="container hero-bottom">
+        <span data-i18n="heroBottom">PRZEMYŚLANE WYKOŃCZENIE. SPOKOJNA GŁOWA.</span>
+        <span class="scroll-cue"><i></i><span data-i18n="scroll">PRZEWIŃ</span></span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>01</strong><span data-i18n="trust1">Dokładne wykonanie</span></div>
+        <div><strong>02</strong><span data-i18n="trust2">Porządek po pracy</span></div>
+        <div><strong>03</strong><span data-i18n="trust3">Uczciwa wycena</span></div>
+        <div><strong>04</strong><span data-i18n="trust4">Warszawa i okolice</span></div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="uslugi">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="servicesEyebrow">CO ROBIMY</span></div><h2 data-i18n-html="servicesTitle">Wszystko, czego<br><em>potrzebuje</em> Twoje wnętrze.</h2></div>
+          <p data-i18n="servicesIntro">Pomagamy odświeżyć pojedyncze pomieszczenie lub przeprowadzić większy remont. Zakres prac dopasowujemy do potrzeb i budżetu.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card service-featured"><div class="service-number">01 /</div><div class="service-icon">▦</div><h3 data-i18n="service1Title">Układanie płytek</h3><p data-i18n="service1Text">Łazienki, kuchnie, podłogi i ściany. Równe fugi, staranne docinanie i estetyczne wykończenia.</p><span class="service-arrow">↗</span></article>
+          <article class="service-card"><div class="service-number">02 /</div><div class="service-icon">◒</div><h3 data-i18n="service2Title">Malowanie ścian</h3><p data-i18n="service2Text">Przygotowanie powierzchni, gruntowanie i dokładne malowanie bez przypadkowych smug.</p><span class="service-arrow">↗</span></article>
+          <article class="service-card"><div class="service-number">03 /</div><div class="service-icon">⌁</div><h3 data-i18n="service3Title">Gładzie i szpachlowanie</h3><p data-i18n="service3Text">Równe ściany i sufity przygotowane pod malowanie lub dalsze prace wykończeniowe.</p><span class="service-arrow">↗</span></article>
+          <article class="service-card"><div class="service-number">04 /</div><div class="service-icon">⌂</div><h3 data-i18n="service4Title">Remonty łazienek</h3><p data-i18n="service4Text">Prace remontowe i wykończeniowe, które łączą funkcjonalność z ponadczasowym wyglądem.</p><span class="service-arrow">↗</span></article>
+          <article class="service-card"><div class="service-number">05 /</div><div class="service-icon">▤</div><h3 data-i18n="service5Title">Panele i podłogi</h3><p data-i18n="service5Text">Montaż paneli, listew przypodłogowych oraz estetyczne wykończenie przejść.</p><span class="service-arrow">↗</span></article>
+          <article class="service-card"><div class="service-number">06 /</div><div class="service-icon">✳</div><h3 data-i18n="service6Title">Prace wykończeniowe</h3><p data-i18n="service6Text">Drobne naprawy, montaż i inne prace, które pomagają dopiąć remont na ostatni guzik.</p><span class="service-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section section" id="realizacje">
+      <div class="container">
+        <div class="section-heading work-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="workEyebrow">NASZE PRACE</span></div><h2 data-i18n-html="workTitle">Detale, które robią<br><em>różnicę.</em></h2></div>
+          <p data-i18n="workIntro">Kilka inspiracyjnych przykładów prac, które możemy wykonać. Właściwe zdjęcia realizacji dodaj przed publikacją strony.</p>
+        </div>
+        <div class="gallery-filters" role="group" aria-label="Filtr galerii">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Wszystkie</button>
+          <button class="filter-btn" data-filter="tiles" data-i18n="filterTiles">Płytki</button>
+          <button class="filter-btn" data-filter="paint" data-i18n="filterPaint">Malowanie</button>
+          <button class="filter-btn" data-filter="interior" data-i18n="filterInterior">Wnętrza</button>
+        </div>
+        <div class="gallery-grid" id="gallery">
+          <button class="gallery-item gallery-large" data-category="tiles" data-full="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85" aria-label="Pokaż zdjęcie łazienki"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Nowoczesne, jasne wnętrze łazienki"><span class="gallery-caption"><small>01 / <span data-i18n="galleryCat1">PŁYTKI I ŁAZIENKI</span></small><strong data-i18n="galleryTitle1">Spójna przestrzeń</strong></span><i>↗</i></button>
+          <button class="gallery-item" data-category="interior" data-full="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85" aria-label="Pokaż zdjęcie salonu"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Elegancki salon w neutralnych kolorach"><span class="gallery-caption"><small>02 / <span data-i18n="galleryCat2">WYKOŃCZENIE WNĘTRZ</span></small><strong data-i18n="galleryTitle2">Ciepły minimalizm</strong></span><i>↗</i></button>
+          <button class="gallery-item" data-category="paint" data-full="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85" aria-label="Pokaż zdjęcie wnętrza"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Jasne wnętrze z gładkimi ścianami"><span class="gallery-caption"><small>03 / <span data-i18n="galleryCat3">MALOWANIE</span></small><strong data-i18n="galleryTitle3">Czysta forma</strong></span><i>↗</i></button>
+          <button class="gallery-item" data-category="tiles" data-full="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1800&q=85" aria-label="Pokaż zdjęcie łazienki"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=85" alt="Detale wykończenia łazienki"><span class="gallery-caption"><small>04 / <span data-i18n="galleryCat1">PŁYTKI I ŁAZIENKI</span></small><strong data-i18n="galleryTitle4">Dopracowane detale</strong></span><i>↗</i></button>
+          <button class="gallery-item" data-category="interior" data-full="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1800&q=85" aria-label="Pokaż zdjęcie kuchni"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Nowoczesna kuchnia"><span class="gallery-caption"><small>05 / <span data-i18n="galleryCat2">WYKOŃCZENIE WNĘTRZ</span></small><strong data-i18n="galleryTitle5">Funkcjonalna kuchnia</strong></span><i>↗</i></button>
+        </div>
+        <p class="gallery-disclaimer" data-i18n="galleryDisclaimer">Zdjęcia mają charakter poglądowy i pochodzą z banku zdjęć. Zastąp je własnymi realizacjami przed uruchomieniem strony.</p>
+      </div>
+    </section>
+
+    <section class="about-section section" id="o-nas">
+      <div class="container about-grid">
+        <div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=85" alt="Prace remontowo-budowlane"><div class="about-stamp"><strong>100%</strong><span data-i18n="stamp">ZAANGAŻOWANIA<br>W KAŻDY PROJEKT</span></div></div>
+        <div class="about-copy"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="aboutEyebrow">DLACZEGO WARTO</span></div><h2 data-i18n-html="aboutTitle">Remont bez<br>niepotrzebnych<br><em>niespodzianek.</em></h2><p data-i18n="aboutText">Dobry remont zaczyna się od rozmowy i jasnych zasad. Ustalamy zakres prac, omawiamy materiały i kolejne etapy, a następnie skupiamy się na solidnym wykonaniu.</p>
+          <div class="about-points"><div><b>✓</b><span data-i18n="aboutPoint1">Konkretny zakres i przejrzyste ustalenia</span></div><div><b>✓</b><span data-i18n="aboutPoint2">Dbałość o mieszkanie i miejsce pracy</span></div><div><b>✓</b><span data-i18n="aboutPoint3">Kontakt na każdym etapie realizacji</span></div></div>
+          <a class="text-link dark-link" href="#kontakt"><span data-i18n="aboutLink">Omówmy Twój projekt</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="processEyebrow">JAK PRACUJEMY</span></div><h2 data-i18n-html="processTitle">Prosto. Jasno.<br><em>Bez chaosu.</em></h2></div><p data-i18n="processIntro">Wiesz, co dzieje się z Twoim remontem — od pierwszego kontaktu aż po odbiór wykonanych prac.</p></div>
+        <div class="process-grid">
+          <div class="process-step"><span>01</span><h3 data-i18n="step1Title">Rozmowa</h3><p data-i18n="step1Text">Opowiedz, czego potrzebujesz. Ustalimy najważniejsze szczegóły i termin.</p></div>
+          <div class="process-step"><span>02</span><h3 data-i18n="step2Title">Wycena</h3><p data-i18n="step2Text">Przygotujemy zakres prac i omówimy koszty przed rozpoczęciem.</p></div>
+          <div class="process-step"><span>03</span><h3 data-i18n="step3Title">Realizacja</h3><p data-i18n="step3Text">Wykonujemy uzgodnione prace, dbając o jakość i porządek.</p></div>
+          <div class="process-step"><span>04</span><h3 data-i18n="step4Title">Odbiór</h3><p data-i18n="step4Text">Sprawdzamy efekt końcowy i dopinamy wszystkie ustalone szczegóły.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section section" id="opinie">
+      <div class="container testimonial-inner">
+        <div><div class="eyebrow light-eyebrow"><span class="eyebrow-line"></span><span data-i18n="reviewsEyebrow">DOBRA WSPÓŁPRACA</span></div><h2 data-i18n-html="reviewsTitle">Zaufanie buduje się<br><em>dobrą robotą.</em></h2><p data-i18n="reviewsIntro">Najlepszą wizytówką są zadowoleni klienci. Tutaj warto umieścić autentyczne opinie z Google lub od klientów.</p></div>
+        <div class="quote-card"><div class="quote-mark">“</div><p data-i18n="quoteText">Bardzo dobry kontakt, dokładne wykonanie i wszystko zgodnie z ustaleniami. Efekt końcowy naprawdę robi wrażenie.</p><div class="quote-author"><span class="quote-avatar">K</span><div><strong data-i18n="quoteAuthor">Przykładowa opinia</strong><small data-i18n="quoteRole">Miejsce na prawdziwą opinię klienta</small></div><span class="quote-stars">★★★★★</span></div><div class="quote-counter">01 <span>/ 01</span></div></div>
+        <p class="reviews-note" data-i18n="reviewsNote">To przykładowy tekst demonstracyjny — przed publikacją zastąp go prawdziwą opinią i uzyskaj zgodę autora.</p>
+      </div>
+    </section>
+
+    <section class="faq-section section">
+      <div class="container faq-grid">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="faqEyebrow">MASZ PYTANIA?</span></div><h2 data-i18n-html="faqTitle">Kilka ważnych<br><em>odpowiedzi.</em></h2><p data-i18n="faqIntro">Nie znalazłeś odpowiedzi? Napisz lub zadzwoń — chętnie omówimy szczegóły.</p><a class="text-link dark-link" href="#kontakt"><span data-i18n="faqLink">Zadaj pytanie</span><b>↗</b></a></div>
+        <div class="faq-list">
+          <details open><summary data-i18n="faq1Q">Na jakim obszarze działacie?<span>+</span></summary><p data-i18n="faq1A">Pracujemy w Warszawie i okolicznych miejscowościach. Dokładną możliwość dojazdu potwierdzimy podczas rozmowy.</p></details>
+          <details><summary data-i18n="faq2Q">Czy wycena jest bezpłatna?<span>+</span></summary><p data-i18n="faq2A">Wstępna rozmowa i omówienie zakresu są bezpłatne. Szczegóły wyceny ustalamy indywidualnie dla danego zlecenia.</p></details>
+          <details><summary data-i18n="faq3Q">Czy pomagacie w zakupie materiałów?<span>+</span></summary><p data-i18n="faq3A">Możemy omówić listę potrzebnych materiałów i doradzić przy ich wyborze. Zakres takiej pomocy ustalamy przed rozpoczęciem prac.</p></details>
+          <details><summary data-i18n="faq4Q">Jak szybko można rozpocząć remont?<span>+</span></summary><p data-i18n="faq4A">Termin zależy od zakresu prac i aktualnego harmonogramu. Skontaktuj się z nami, aby sprawdzić dostępność.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-copy"><div class="eyebrow light-eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">ZACZNIJMY OD ROZMOWY</span></div><h2 data-i18n-html="contactTitle">Masz plan?<br><em>Zrealizujmy go.</em></h2><p data-i18n="contactText">Opowiedz krótko o swoim remoncie. Wrócimy z odpowiedzią i ustalimy, jaki będzie najlepszy kolejny krok.</p>
+          <div class="contact-details"><a href="tel:+48500000000"><span class="contact-icon">↗</span><div><small data-i18n="phoneLabel">ZADZWOŃ</small><strong>+48 500 000 000</strong></div></a><a href="mailto:kontakt@solidbud.pl"><span class="contact-icon">✉</span><div><small>E-MAIL</small><strong>kontakt@solidbud.pl</strong></div></a><div><span class="contact-icon">⌖</span><div><small data-i18n="areaLabel">OBSZAR DZIAŁANIA</small><strong data-i18n="areaValue">Warszawa i okolice</strong></div></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-heading"><strong data-i18n="formTitle">Opowiedz nam o projekcie</strong><span data-i18n="formSubtitle">Odpowiemy najszybciej, jak to możliwe.</span></div>
+          <label><span data-i18n="formName">Imię</span><input type="text" name="name" required placeholder="Jan Kowalski" data-i18n-placeholder="formNamePlaceholder"></label>
+          <label><span data-i18n="formEmail">Adres e-mail lub telefon</span><input type="text" name="reply" required placeholder="jan@email.com" data-i18n-placeholder="formReplyPlaceholder"></label>
+          <label><span data-i18n="formService">Czego dotyczy praca?</span><select name="service"><option value="" data-i18n="formChoose">Wybierz usługę</option><option data-i18n="service1Title">Układanie płytek</option><option data-i18n="service2Title">Malowanie ścian</option><option data-i18n="service3Title">Gładzie i szpachlowanie</option><option data-i18n="service4Title">Remonty łazienek</option><option data-i18n="service5Title">Panele i podłogi</option><option data-i18n="service6Title">Prace wykończeniowe</option><option data-i18n="formOther">Inne</option></select></label>
+          <label><span data-i18n="formMessage">Krótki opis</span><textarea name="message" rows="3" placeholder="Napisz, czego potrzebujesz..." data-i18n-placeholder="formMessagePlaceholder"></textarea></label>
+          <label class="consent"><input type="checkbox" required><span data-i18n="formConsent">Wyrażam zgodę na kontakt w sprawie mojego zapytania.</span></label>
+          <button class="button button-olive submit-button" type="submit"><span data-i18n="formSubmit">Wyślij zapytanie</span><span>↗</span></button>
+          <p class="form-privacy" data-i18n="formPrivacy">Demo formularza — po konfiguracji otworzy program pocztowy z przygotowaną wiadomością.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-name">solid<span>bud</span><small>REMONTY · WYKOŃCZENIA</small></span></a><p data-i18n="footerText">Solidne wykonanie. Dobre wnętrza. Warszawa i okolice.</p><a href="#top" class="back-top" aria-label="Wróć na górę">↑</a></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> SolidBud. <span data-i18n="copyright">Wszelkie prawa zastrzeżone.</span></span><span data-i18n="footerMade">Strona demonstracyjna — dane do uzupełnienia.</span></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Zamknij">×</button><button class="lightbox-prev" id="lightboxPrev" aria-label="Poprzednie">‹</button><img id="lightboxImage" src="" alt=""><button class="lightbox-next" id="lightboxNext" aria-label="Następne">›</button></div>
+  <script src="./i18n.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
